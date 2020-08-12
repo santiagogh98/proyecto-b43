@@ -17,7 +17,7 @@ function Landing() {
             </div>
             <div className='container '>
 
-            <Link to="/Negocio"><button type="button" className="btn btn-secondary">Negocio</button>
+            <Link to="/Negocio"><button >Negocio</button>
             </Link>
 
 
