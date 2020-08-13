@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Search = (props) => {
+function Search(props) {
 
-    const {getNegocios} = props;
+   
+    const{buscarNegocios}=props;
+    
 
-    const handlerEvent = (evento) => {
-        getNegocios(evento.target.value);
+    const handlerEvent=(evento)=>{
+        console.log(evento.target.value)
+        buscarNegocios(evento.target.value);
+        
+
     }
 
     return (
@@ -13,7 +18,7 @@ const Search = (props) => {
             <div className="input-group-prepend">
                 <span className="input-group-text" id="basic-addon1">En que lugar deseas comer?</span>
             </div>
-            <input onChange={handlerEvent} type="text" className="form-control" placeholder="CDMX,TEPOZTLA,ETC" aria-label="Username" aria-describedby="basic-addon1"/>
+            <input onChange={handlerEvent} type="text" className="form-control" placeholder="CDMX,TEPOZTLAN,ETC" aria-label="Username" aria-describedby="basic-addon1"/>
         </div>
     )
 }

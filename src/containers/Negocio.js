@@ -1,6 +1,5 @@
 import React from 'react'
 import CreateForm from '../components/CreateForm'
-import Plantilla from '../utils/Plantilla';
 import axios from 'axios';
 
 const Negocio = () => {

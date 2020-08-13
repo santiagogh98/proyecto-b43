@@ -3,7 +3,8 @@ import React from 'react';
 
 const Card = (props) => {
 
-    const { nombre, localizacion, tipo, horario,promedio,id, deleteNegocio, completeNegocio} = props;
+    const { nombre, localizacion, tipo, horario,promedio,id} = props;
+    
 
     return (
         <div className="card mb-4">
@@ -14,7 +15,8 @@ const Card = (props) => {
                 <p className="card-text">Horario:{horario}</p>
                 <p className="card-text">Gasto por persona:${promedio}</p>
                
-                </div>
+            </div>
+            <button >Agregar a itinerario</button>
         </div>
     )
 }

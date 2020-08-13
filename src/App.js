@@ -4,6 +4,7 @@ import './App.css';
 import Landing from './containers/Landing';
 import Turista from './containers/Turista';
 import Negocio from './containers/Negocio';
+import TuristaFood from './containers/TuristasFood';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route exact path="/" component={Landing}></Route>
         <Route exact path="/turista" component={Turista}></Route>
         <Route exact path="/negocio" component={Negocio}></Route>
+        <Route exact path="/TuristaFood" component={TuristaFood}></Route>
+
 
       </Switch>
       
