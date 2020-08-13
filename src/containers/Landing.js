@@ -82,19 +82,19 @@ function Landing() {
                         <div className="col-lg-4">
                         <img src='https://c.pxhere.com/photos/a1/58/breads_breakfast_delicious_egg_food_food_plating_fork_jam-959488.jpg!d' className="bd-placeholder-img rounded-circle" width="140" height="140" />
                             <h2>Comer</h2>
-                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                            <p>Comoce los mejores lugares para desayunar comer o cenar, visita restaurantes emblemáticos de la zona y disfruta de un zazón inolvidable.</p>
                             <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
                         </div>
                         <div className="col-lg-4">
                         <img src='https://www.bubblefootball.es/wp-content/uploads/2016/01/aventura.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" />
                             <h2>Hacer</h2>
-                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                            <p>Descubre actividades o lugares de interés para conocer, dale una vuelta a éstos sitios llenos de cultura e historia. Arma tus actividades y descubre qué hay de nuevo cerca de ti.</p>
                             <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
                         </div>
                         <div className="col-lg-4">
                         <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" />
                             <h2>Itinerario</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            <p>Arma un itinerario y sacale provecho al tiempo para conocer el lugar. Con la opción de itinerario random déjate llevar por nuestras opciones y descubre lo mejor que tenemos para ti.</p>
                             <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ function Landing() {
 
                     <div className="row featurette">
                         <div className="col-md-7">
-                            <h2 className="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                            <h2 className="featurette-heading">Conoce nuevos lugares <span class="text-muted">No te decepcionarán.</span></h2>
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5">
@@ -115,7 +115,7 @@ function Landing() {
 
                     <div className="row featurette">
                         <div className="col-md-7 order-md-2">
-                            <h2 className="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+                            <h2 className="featurette-heading">Obten una nueva perspectiva <span class="text-muted">del lugar donde vives.</span></h2>
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5 order-md-1">
@@ -127,7 +127,7 @@ function Landing() {
 
                     <div className="row featurette">
                         <div className="col-md-7">
-                            <h2 className="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                            <h2 className="featurette-heading">Conoce, diviertete, explora<span class="text-muted">, siempre llega algo nuevo.</span></h2>
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5">
