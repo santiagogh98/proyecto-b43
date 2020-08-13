@@ -16,7 +16,7 @@ function Landing() {
                     <div class="collapse navbar-collapse" id="navbarCollapse" style={{fontSize:20+'px'}}>
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <Link class="nav-link" to="/turista">Turista <span class="sr-only">(current)</span></Link>
+                                <Link class="nav-link" to="/">Inicio <span class="sr-only">(current)</span></Link>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
