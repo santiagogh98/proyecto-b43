@@ -1,32 +1,14 @@
 import React from 'react';
 import './Landing.css';
 import { Link } from "react-router-dom";
+import NavBar from '../components/NavBar';
 
 
 
 function Landing() {
     return (
         <React.Fragment>
-            <header>
-                <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a className="navbar-brand" style={{fontSize:35+'px'}} href="#">Turisteapp</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarCollapse" style={{fontSize:20+'px'}}>
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                                <Link className="nav-link" to="/">Inicio <span className="sr-only">(current)</span></Link>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li className="nav-item">
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+            <NavBar/>            
             <main role="main">
                 <div id="myCarousel" className="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -36,7 +18,7 @@ function Landing() {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src='https://www.stantonchase.com/wp-content/uploads/2014/10/00000233-2.jpg' className='d-block w-100' />
+                            <img src='https://www.stantonchase.com/wp-content/uploads/2014/10/00000233-2.jpg' className='d-block w-100' alt="BellasArtes"/>
                             <div className="container">
                                 <div className="carousel-caption text-left">
                                     <h1>Sé un turista</h1>
@@ -46,22 +28,20 @@ function Landing() {
                             </div>
                         </div>
                         <div className="carousel-item">
-                        <img src='https://s-i.huffpost.com/gen/1776916/images/o-SAN-MIGUEL-MEXICO-facebook.jpg' className='d-block w-100' />
+                        <img src='https://bloghoteles.com.mx/wp-content/uploads/2018/12/shutterstock_640626874.jpg' className='d-block w-100'alt="Playa" />
                             <div className="container">
                                 <div className="carousel-caption">
-                                    <h1>Another example headline.</h1>
+                                    <h1>Conoce los lugares más hermosos.</h1>
                                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a className="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
-                        <img src='https://charismaticplanet.com/wp-content/uploads/2015/12/shiprock-sunset-color-new-mexico.jpg' className='d-block w-100' />
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/f4/Chichen_Itza_1.jpg' className='d-block w-100' alt="Ruinas Chichen Itza"/>
                             <div className="container">
                                 <div className="carousel-caption text-right">
-                                    <h1>One more for good measure.</h1>
+                                    <h1>Explora tu cultura</h1>
                                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                    <p><a className="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                                 </div>
                             </div>
                         </div>
@@ -80,23 +60,21 @@ function Landing() {
                 <div className="container marketing">
                     <div className="row">
                         <div className="col-lg-4">
-                        <img src='https://c.pxhere.com/photos/a1/58/breads_breakfast_delicious_egg_food_food_plating_fork_jam-959488.jpg!d' className="bd-placeholder-img rounded-circle" width="140" height="140" />
+                        <img src='https://c.pxhere.com/photos/a1/58/breads_breakfast_delicious_egg_food_food_plating_fork_jam-959488.jpg!d' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Comida"/>
                             <h2>Comer</h2>
                             <p>Comoce los mejores lugares para desayunar comer o cenar, visita restaurantes emblemáticos de la zona y disfruta de un zazón inolvidable.</p>
-                            <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
+                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>
                         </div>
                         <div className="col-lg-4">
-                        <img src='https://www.bubblefootball.es/wp-content/uploads/2016/01/aventura.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" />
+                        <img src='https://www.bubblefootball.es/wp-content/uploads/2016/01/aventura.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Actividad"/>
                             <h2>Hacer</h2>
                             <p>Descubre actividades o lugares de interés para conocer, dale una vuelta a éstos sitios llenos de cultura e historia. Arma tus actividades y descubre qué hay de nuevo cerca de ti.</p>
-                            <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
-                        </div>
+                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>                        </div>
                         <div className="col-lg-4">
-                        <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" />
+                        <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Mapas"/>
                             <h2>Itinerario</h2>
                             <p>Arma un itinerario y sacale provecho al tiempo para conocer el lugar. Con la opción de itinerario random déjate llevar por nuestras opciones y descubre lo mejor que tenemos para ti.</p>
-                            <p><a className="btn btn-secondary" href="#" role="button">Ver Detalles &raquo;</a></p>
-                        </div>
+                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>                        </div>
                     </div>
 
                     <hr className="featurette-divider" />
@@ -107,7 +85,7 @@ function Landing() {
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5">
-                        <img src='http://network.icom.museum/uploads/RTEmagicC_popocatepletl-y-ciudad_01.jpg.jpg' className="bd-placeholder-img " width="450" height="450" />
+                        <img src='http://network.icom.museum/uploads/RTEmagicC_popocatepletl-y-ciudad_01.jpg.jpg' className="bd-placeholder-img " width="450" height="450" alt="Montaña"/>
                         </div>
                     </div>
 
@@ -119,7 +97,7 @@ function Landing() {
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5 order-md-1">
-                        <img src='https://mexico.didiglobal.com/wp-content/uploads/sites/5/2020/06/Mexico.jpg' className="bd-placeholder-img " width="450" height="450" />
+                        <img src='https://mexico.didiglobal.com/wp-content/uploads/sites/5/2020/06/Mexico.jpg' className="bd-placeholder-img " width="450" height="450" alt="Angel de Reforma" />
                         </div>
                     </div>
 
@@ -131,7 +109,7 @@ function Landing() {
                             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         </div>
                         <div className="col-md-5">
-                        <img src='https://www.optimomexico.mx/wp-content/uploads/2018/12/500x500-8.jpg' className="bd-placeholder-img " width="450" height="450" />
+                        <img src='https://www.optimomexico.mx/wp-content/uploads/2018/12/500x500-8.jpg' className="bd-placeholder-img " width="450" height="450" alt="Mujer Saltando"/>
                         </div>
                     </div>
 
@@ -139,30 +117,12 @@ function Landing() {
 
                 </div>  
                 <footer className="container">
-                    <p className="float-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2020 Turisteapp, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>&middot;  <Link to="/negocio">Negocio</Link></p>
+                    <p className="float-right"><a href="/">Volver arriba</a></p>
+                    <p>&copy; 2020 Turisteapp, Inc. &middot; <a href="/">Privacidad</a> &middot; <a href="/">Terminos</a> &middot;  <Link to="/negocio">Negocio</Link></p>
                 </footer>
             </main>
         </React.Fragment >
-        // <div>
-        //     <h1>Turisteapp</h1>
-        //     <div className='container '>
-
-        //     <Link to="/turista"><button>
-        //       Turista
-        //     </button>
-        //     </Link>
-
-        //     </div>
-        //     <div className='container '>
-
-        //     <Link to="/Negocio"><button >Negocio</button>
-        //     </Link>
-
-
-        //     </div>
-
-        // </div>
+    
     )
 }
 

@@ -4,6 +4,7 @@ import axios from 'axios';
 import Search from '../components/Search';
 import Negocio from './Negocio';
 import { Link } from "react-router-dom";
+import NavBar from '../components/NavBar';
 
 
 const TuristaFood = () => {
@@ -46,29 +47,7 @@ const TuristaFood = () => {
 
     return (
         <React.Fragment>
-            <header>
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" style={{ fontSize: 35 + 'px' }} href="#">Turisteapp</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse" style={{ fontSize: 20 + 'px' }}>
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                                <Link class="nav-link" to="/turistaFood">Comida <span class="sr-only">(current)</span></Link>
-                            </li>
-                            <li class="nav-item ">
-                                <Link class="nav-link" to="/turista">Atrás <span class="sr-only">(current)</span></Link>
-                            </li>
-                            <li class="nav-item ">
-                                <Link class="nav-link" to="/">Inicio</Link>
-                            </li>
-                            <li class="nav-item">
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+            <NavBar/>
             <hr class="featurette-divider" />
 
             <div>

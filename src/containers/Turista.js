@@ -1,31 +1,18 @@
 import React from 'react'
 import {Link } from "react-router-dom";
+import NavBar from '../components/NavBar';
 
 function Turista() {
     return (
         <React.Fragment>
-        <header>
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" style={{fontSize:35+'px'}} href="#">Turisteapp</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse" style={{fontSize:20+'px'}}>
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <Link class="nav-link" to="/turista">Turista <span class="sr-only">(current)</span></Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/">Inicio</Link>
-                            </li>
-                            <li class="nav-item">
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+        <NavBar/>
+        <section className="jumbotron w-100 h-20">
+                <div className="container">
+                    <h1>Turista</h1>
+                    <p className="lead "></p>
+                </div>
+            </section>
             <main role="main">
-            <hr class="featurette-divider" />
             <div class="container marketing d-flex justify-content-center">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-4">
