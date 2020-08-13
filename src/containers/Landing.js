@@ -21,27 +21,29 @@ function Landing() {
                             <img src='https://www.stantonchase.com/wp-content/uploads/2014/10/00000233-2.jpg' className='d-block w-100' alt="BellasArtes"/>
                             <div className="container">
                                 <div className="carousel-caption text-left">
-                                    <h1>Sé un turista</h1>
-                                    <p>¡Crea un itinerario, reserva en un restaurante o visita alguna actividad!</p>
-                                    <p><Link className="btn btn-lg btn-primary" to="/turista" role="button">Turistear</Link></p>
+                                    <h1>Sé un turista siempre</h1>
+                                    <p>¡Crea tu itinerario, reserva experiencias para ti y tus seres queridos!</p>
+                                    <p><Link className="btn btn-lg btn-primary" to="/turista" role="button">Planea ahora</Link></p>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                         <img src='https://bloghoteles.com.mx/wp-content/uploads/2018/12/shutterstock_640626874.jpg' className='d-block w-100'alt="Playa" />
                             <div className="container">
-                                <div className="carousel-caption">
+                                <div className="carousel-caption text-left">
                                     <h1>Conoce los lugares más hermosos.</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>¡Crea tu itinerario, reserva experiencias para ti y tus seres queridos!</p>
+                                    <p><Link className="btn btn-lg btn-primary" to="/turista" role="button">Planea ahora</Link></p>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                         <img src='https://upload.wikimedia.org/wikipedia/commons/f/f4/Chichen_Itza_1.jpg' className='d-block w-100' alt="Ruinas Chichen Itza"/>
                             <div className="container">
-                                <div className="carousel-caption text-right">
+                                <div className="carousel-caption text-left">
                                     <h1>Explora tu cultura</h1>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>¡Crea tu itinerario, reserva experiencias para ti y tus seres queridos!</p>
+                                    <p><Link className="btn btn-lg btn-primary" to="/turista" role="button">Planea ahora</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -58,27 +60,7 @@ function Landing() {
                 
                 
                 <div className="container marketing">
-                    <div className="row">
-                        <div className="col-lg-4">
-                        <img src='https://c.pxhere.com/photos/a1/58/breads_breakfast_delicious_egg_food_food_plating_fork_jam-959488.jpg!d' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Comida"/>
-                            <h2>Comer</h2>
-                            <p>Comoce los mejores lugares para desayunar comer o cenar, visita restaurantes emblemáticos de la zona y disfruta de un zazón inolvidable.</p>
-                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>
-                        </div>
-                        <div className="col-lg-4">
-                        <img src='https://www.bubblefootball.es/wp-content/uploads/2016/01/aventura.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Actividad"/>
-                            <h2>Hacer</h2>
-                            <p>Descubre actividades o lugares de interés para conocer, dale una vuelta a éstos sitios llenos de cultura e historia. Arma tus actividades y descubre qué hay de nuevo cerca de ti.</p>
-                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>                        </div>
-                        <div className="col-lg-4">
-                        <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Mapas"/>
-                            <h2>Itinerario</h2>
-                            <p>Arma un itinerario y sacale provecho al tiempo para conocer el lugar. Con la opción de itinerario random déjate llevar por nuestras opciones y descubre lo mejor que tenemos para ti.</p>
-                            <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>                        </div>
-                    </div>
-
-                    <hr className="featurette-divider" />
-
+                
                     <div className="row featurette">
                         <div className="col-md-7">
                             <h2 className="featurette-heading">Conoce nuevos lugares <span class="text-muted">No te decepcionarán.</span></h2>

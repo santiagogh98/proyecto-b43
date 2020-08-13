@@ -49,9 +49,7 @@ const TuristaFood = () => {
         <React.Fragment>
             <NavBar/>
             <hr class="featurette-divider" />
-
             <div>
-
                 <Search buscarNegocios={buscarNegocios} />
                 <main className="main">
                     {negociosFiltrados ?
