@@ -12,12 +12,16 @@ function Landing() {
                 <p className="elegir">ELIGE TU PERFIL</p>
                 <div className="opciones">
                     <div className="opcion">
-                        <img src="https://img.icons8.com/plasticine/100/000000/suitcase.png"/>
-                        <p>TURISTA</p>
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d' }} to="/turista">
+                            <img src="https://img.icons8.com/plasticine/100/000000/suitcase.png"/>
+                            <p>TURISTA</p>
+                        </Link>
                     </div>
                     <div className="opcion">
-                        <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/>
-                        <p>NEGOCIO</p>
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d'  }} to="/Negocio">
+                            <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/>
+                            <p>NEGOCIO</p>
+                        </Link>
                     </div>
                 </div>
             </div>
