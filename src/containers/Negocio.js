@@ -1,6 +1,7 @@
 import React from 'react'
 import CreateForm from '../components/CreateForm'
 import axios from 'axios';
+import NavBar from '../components/NavBar';
 
 const Negocio = () => {
 
@@ -16,6 +17,7 @@ const Negocio = () => {
 
     return (
         <React.Fragment>
+            <NavBar />
             <main className="main">
                 <div className="container pt-4">
                     <CreateForm createNegocio={createNegocio}/>
