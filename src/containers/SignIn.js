@@ -18,7 +18,7 @@ const SignIn = () => {
                             <input type="checkbox" value="remember-me" /> Recuérdame
                         </label>
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Seción</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
                     <p class="mt-5 mb-3 text-muted">&copy; 2020 &middot;  <Link to="./">Cancelar</Link></p>
                 </form>
             </main>
