@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import './Random.css'
 const Random = (props) => {
-    const { negociosRandom, actividadesRandom } = props.location.state;
+    const {negociosRandom,actividadesRandom}=props.location.state;
     return (
         <React.Fragment>
             <NavBar />
@@ -30,7 +30,7 @@ const Random = (props) => {
                                 ))
                             : <h1>No hay negocios en el lugar</h1>
 
-                        }
+                        }                       
                         {negociosRandom ?
                             negociosRandom.map(negocio =>
                                 (<Card
@@ -39,14 +39,9 @@ const Random = (props) => {
                                     tipo={negocio.tipo}
                                     horario={negocio.horario}
                                     promedio={negocio.promedio}
-
                                 />
-
-
                                 ))
                             : <h1>No hay negocios en el lugar</h1>
-
-
                         }
                     </div>
                 </div>
@@ -54,7 +49,6 @@ const Random = (props) => {
             </main>
         </React.Fragment>
     )
-
 }
 
 export default Random;

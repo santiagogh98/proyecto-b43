@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card'
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import './Itinerario.css'
 
 const Itinerario = (props) => {
 
@@ -7,6 +10,11 @@ const Itinerario = (props) => {
          let [negociosFiltrados,setNegociosFiltrados]=useState([]);
     return (
         <div>
+            <NavBar />
+            <section className="jumbotronItinerario text-center">
+                    <hr className="featurette-divider" />
+                    <h1>Itinerario</h1>
+                </section>
             {negociosFiltrados? 
             negociosFiltrados.map(negocio=>
                  (<Card
@@ -25,6 +33,7 @@ const Itinerario = (props) => {
         
 
             }  
+            <Footer />
 
         </div>
         

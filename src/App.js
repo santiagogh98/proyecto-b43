@@ -7,10 +7,9 @@ import Negocio from './containers/Negocio';
 import TuristaFood from './containers/TuristasFood';
 import TuristaActividad from './containers/TuristaActividad';
 import Actividad from './containers/Actividad';
-import itinerario from './containers/itinerario';
 import SignIn from './containers/SignIn';
 import Random from './containers/Random';
-import Itinerario from './containers/itinerario';
+import Itinerario from './containers/Itinerario';
 
 
 
@@ -25,7 +24,6 @@ function App() {
         <Route exact path="/actividad" component={Actividad}></Route>
         <Route exact path="/TuristaFood" component={TuristaFood}></Route>
         <Route exact path="/TuristaActivity" component={TuristaActividad}></Route>
-        <Route exact path="/ItinerarioRandom" component={itinerario}></Route>
         <Route exact path="/SignIn" component={SignIn}></Route>
         <Route exact path="/Itinerario" component={Itinerario}></Route>
         <Route exact path="/Random" component={Random}></Route>
