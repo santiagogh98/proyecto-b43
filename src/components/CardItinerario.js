@@ -12,9 +12,7 @@ const CardItinerario = (props) => {
                 <h4 className="card-title">Se encuentra en :{localizacion}</h4>
                 <p className="card-text">Horario:{horario}</p>
                 <p className="card-text">Costo:{costo}</p>
-                <p className="card-text">Duración:{duracion}</p>
-
-               
+                <p className="card-text">Duración:{duracion}</p>               
             </div>
         </div>
     )

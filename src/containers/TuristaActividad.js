@@ -55,7 +55,8 @@ const TuristaActividad = () => {
                     <h1>Busca un lugar para descubrirr</h1>
                     <SearchAc buscarActividades={buscarActividades}/>
             </section>
-                <div className=" mx-auto ">                
+                <div className=" mx-auto p-5">  
+                <div class="row row-cols-1 row-cols-md-3">              
                
                 {actividadesFiltradas? 
             actividadesFiltradas.map(actividad=>
@@ -69,7 +70,8 @@ const TuristaActividad = () => {
                 ))
             :<h1>No hay negocios en el lugar</h1>      
             } 
-            </div>  
+            </div>
+            </div>
             <Footer />
             </main>            
         

@@ -53,7 +53,8 @@ const TuristaFood = () => {
                     <h1>Busca un lugar para comer</h1>
                     <Search buscarNegocios={buscarNegocios}/> 
             </section>
-                <div className=" mx-auto ">                
+                <div className=" mx-auto p-5">  
+                <div class="row row-cols-1 row-cols-md-3">              
                
             {negociosFiltrados? 
             negociosFiltrados.map(negocio=>
@@ -68,6 +69,7 @@ const TuristaFood = () => {
             ) )
             :<h1>No hay negocios en el lugar</h1>   
             } 
+            </div>
             </div>  
             <Footer />
             </main>            

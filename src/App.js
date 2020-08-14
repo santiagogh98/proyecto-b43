@@ -8,6 +8,7 @@ import TuristaFood from './containers/TuristasFood';
 import TuristaActividad from './containers/TuristaActividad';
 import Actividad from './containers/Actividad';
 import itinerario from './containers/itinerario';
+import SignIn from './containers/SignIn';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <Route exact path="/TuristaFood" component={TuristaFood}></Route>
         <Route exact path="/TuristaActivity" component={TuristaActividad}></Route>
         <Route exact path="/Itinerario" component={itinerario}></Route>
+        <Route exact path="/SignIn" component={SignIn}></Route>
+
 
 
       </Switch>

@@ -13,15 +13,22 @@ const NavBar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarCollapse" style={{fontSize:20+'px'}}>
                         <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/turista">Turistear <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/negocio">Contacto</Link>
-                            </li>
-                            <li className="nav-item">
-                            </li>
+                            </li>                            
                         </ul>
+                        <ul className="navbar-nav justify-content">
+                                <li className="nav-item ">
+                                    <Link className="nav-link" to="/SignIn">Iniciar Sesión</Link>                                    
+                                </li>
+                                <li className="nav-item active"><p className="nav-link">|</p></li>
+                                <li className="nav-item ">
+                                    <Link className="nav-link" to="/negocio">Registrarse </Link>                                    
+                                </li>
+                            </ul>
                     </div>
                 </nav>
             </header>
