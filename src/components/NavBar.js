@@ -17,7 +17,10 @@ const NavBar = () => {
                                 <Link className="nav-link" to="/turista">Turistear <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/negocio">Contacto</Link>
+                                <Link className="nav-link" to="/negocio">Agregar Negocio</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/actividad">Agregar Actividad</Link>
                             </li>
                             <li className="nav-item">
                             </li>

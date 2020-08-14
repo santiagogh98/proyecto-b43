@@ -11,8 +11,7 @@ const Random = (props) => {
     const {negociosRandom,actividadesRandom}=props.location.state;
     
 
-    console.log(props);
-    console.log();
+  
 
 // let arrayNegocios=[];
 // arrayNegocios.push(props.location.state.negociosRandom)
@@ -62,24 +61,7 @@ const Random = (props) => {
 
     return (
         <div>
-            {actividadesRandom? 
-            actividadesRandom.map(actividad=>
-                 (<CardActivity
-
-                    nombre={actividad.nombre}
-                    localizacion={actividad.localizacion}
-                    horario={actividad.tipo}
-                    costo={actividad.horario}
-                    duracion={actividad.promedio}
-        
-                    />
-
-                
-            ) )
-            :<h1>No hay negocios en el lugar</h1>
-        
-
-            }    
+           
 
 {negociosRandom? 
             negociosRandom.map(negocio=>
@@ -98,7 +80,25 @@ const Random = (props) => {
             :<h1>No hay negocios en el lugar</h1>
         
 
-            }     
+            }    
+              {actividadesRandom? 
+            actividadesRandom.map(actividad=>
+                 (<CardActivity
+
+                    nombre={actividad.nombre}
+                    localizacion={actividad.localizacion}
+                    horario={actividad.tipo}
+                    costo={actividad.horario}
+                    duracion={actividad.promedio}
+        
+                    />
+
+                
+            ) )
+            :<h1>No hay negocios en el lugar</h1>
+        
+
+            }    
            
                     
                 
