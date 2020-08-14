@@ -8,7 +8,7 @@ import TuristaFood from './containers/TuristasFood';
 import TuristaActividad from './containers/TuristaActividad';
 import Actividad from './containers/Actividad';
 import Random from './containers/Random';
-import Itinerario from './containers/itinerario';
+import Itinerario from './containers/Itinerario';
 
 
 
