@@ -140,7 +140,7 @@ function Turista() {
                                 <p>Descubre actividades o lugares de interés para conocer, dale una vuelta a éstos sitios llenos de cultura e historia. Arma tus actividades y descubre qué hay de nuevo cerca de ti.</p>
                                                      </div>
                             <div className="col-lg-4">
-                               <Link to='Itinerario'> <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Mapas" />
+                               <Link to='/Itinerario'> <img src='https://image.freepik.com/vector-gratis/mapa-ruta-punteros-estilo-plano_23-2147783000.jpg' className="bd-placeholder-img rounded-circle" width="140" height="140" alt="Mapas" />
  </Link>                               <h2>Itinerario</h2>
                                 <p>Arma un itinerario y sacale provecho al tiempo para conocer el lugar.</p>
                                               </div>
