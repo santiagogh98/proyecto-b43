@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import CardActivity from '../components/CardActivity';
-import axios from 'axios';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import './Random.css'
