@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import CardActivity from '../components/CardActivity';
-import axios from 'axios';
-import Search from '../components/Search';
+import NavBar from'../components/NavBar';
 
 
 
@@ -81,24 +80,7 @@ const Random = (props) => {
         
 
             }    
-              {actividadesRandom? 
-            actividadesRandom.map(actividad=>
-                 (<CardActivity
-
-                    nombre={actividad.nombre}
-                    localizacion={actividad.localizacion}
-                    horario={actividad.tipo}
-                    costo={actividad.horario}
-                    duracion={actividad.promedio}
-        
-                    />
-
-                
-            ) )
-            :<h1>No hay negocios en el lugar</h1>
-        
-
-            }    
+              
            
                     
                 

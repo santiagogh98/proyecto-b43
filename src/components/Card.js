@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 
 const Card = (props) => {
@@ -6,7 +8,7 @@ const Card = (props) => {
     
 
     const { nombre, localizacion, tipo, horario,promedio,id} = props;
-    const{setNegociosFiltrados}=props;
+    
     
 
     return (
@@ -19,7 +21,8 @@ const Card = (props) => {
                 <p className="card-text">Gasto por persona:${promedio}</p>
                
             </div>
-            <button onClick={setNegociosFiltrados}>Agregar a itinerario</button>
+
+           <Link to={{pathname:'/Itinerario',state:{nombre:nombre, localizacion:localizacion, tipo:tipo, horario:horario,promedio:promedio,id:id}}} ><button>Agregar a itinerario</button></Link> 
         </div>
     )
 }
