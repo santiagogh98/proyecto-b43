@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import axios from 'axios';
 import Search from '../components/Search';
-
-
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import'./TuristaFood.css';
 
 const TuristaFood = () => {
     
@@ -44,18 +45,18 @@ const TuristaFood = () => {
         getNegocios();
     }, []);
 
-   
-
-        
-        
-               
-              
-
     return (
-        <div>
-            
-            <Search buscarNegocios={buscarNegocios}/>
-            <main className="main">  
+        <React.Fragment>            
+            <NavBar />
+            <main className="main h-100 ">
+            <section className="jumbotronFood text-center">
+            <hr className="featurette-divider" />
+                    <h1>Busca un lugar para comer</h1>
+                    <Search buscarNegocios={buscarNegocios}/> 
+            </section>
+                <div className=" mx-auto p-5">  
+                <div class="row row-cols-1 row-cols-md-3">              
+               
             {negociosFiltrados? 
             negociosFiltrados.map(negocio=>
                  (<Card
@@ -64,38 +65,17 @@ const TuristaFood = () => {
                     localizacion={negocio.localizacion}
                     tipo={negocio.tipo}
                     horario={negocio.horario}
-                    promedio={negocio.promedio}
-        
-                    />
-
-                
+                    promedio={negocio.promedio}        
+                    />                
             ) )
-            :<h1>No hay negocios en el lugar</h1>
+            :<h1>No hay negocios en el lugar</h1>   
+            } 
+            </div>
+            </div>  
+            <Footer />
+            </main>            
         
-
-            }    
-        
-
-                <div className="container pt-4">
-                    
-                     
-                        
-
-
-                    
-                
-            
-    
-
-
-                    
-
-                    
-                    
-
-                </div>
-            </main>
-        </div>
+        </React.Fragment>
     )
     
 }

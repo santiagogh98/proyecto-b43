@@ -1,0 +1,17 @@
+
+  .jumbotronItinerario {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    height: 30rem;
+    text-align: center;
+    background-image: url('https://i0.wp.com/elantitour.com/wp-content/uploads/2018/12/como-hacer-un-itinerario-de-viaje-a-europa_portada-.jpg?fit=4752%2C1867&ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+  }
+  .h1 {
+    font-size: 180px;
+  }
