@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Search(props) {
+function SearchAc(props) {
 
    
-    const{buscarNegocios}=props;
+    const{buscarActividades}=props;
     
 
     
 
     const handlerEvent=(evento)=>{
         console.log(evento.target.value)
-        buscarNegocios(evento.target.value);
+        buscarActividades(evento.target.value);
         
         
 
@@ -26,4 +26,4 @@ function Search(props) {
     )
 }
 
-export default Search;
+export default SearchAc;

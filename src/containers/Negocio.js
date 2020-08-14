@@ -7,7 +7,7 @@ const Negocio = () => {
     const createNegocio = (nombre,localizacion,tipo,horario,promedio) => {
         const URL = 'https://turisteapp-1.firebaseio.com/negocio.json';
 
-        let newNegocio = {nombre :nombre, localizacion : localizacion, tipo: tipo,horario:horario,promedio:promedio } ;
+        let newNegocio = {nombre :nombre, localizacion : localizacion, tipo:tipo,horario:horario,promedio:promedio } ;
         axios.post(URL, newNegocio)
             .then(res => console.log(res))
             .catch(error => console.log(error));

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import axios from 'axios';
 import Search from '../components/Search';
-import Negocio from './Negocio';
+
 
 
 const TuristaFood = () => {
@@ -62,7 +62,7 @@ const TuristaFood = () => {
                     nombre={negocio.nombre}
                     localizacion={negocio.localizacion}
                     tipo={negocio.tipo}
-                    horario={negocio.tipo}
+                    horario={negocio.horario}
                     promedio={negocio.promedio}
         
                     />
