@@ -13,7 +13,8 @@ const Card = (props) => {
                         <p class="card-text">Tipo:{tipo}</p>
                         <p class="card-text">Horario:{horario}</p>
                         <p class="card-text">Gasto por persona:${promedio}</p>
-                        <a onClick={setNegociosFiltrados} class="btn btn-primary">Agregar a itinerarios</a>      </div>
+                        <a onClick={setNegociosFiltrados} class="btn btn-primary">Agregar a itinerarios</a> 
+                    </div>
                 </div>
             </div>
         </React.Fragment>

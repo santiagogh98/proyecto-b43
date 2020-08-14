@@ -2,107 +2,60 @@ import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import CardActivity from '../components/CardActivity';
 import axios from 'axios';
-import Search from '../components/Search';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import './Random.css'
 const Random = (props) => {
-    
-    const {negociosRandom,actividadesRandom}=props.location.state;
-    
-
-    console.log(props);
-    console.log();
-
-// let arrayNegocios=[];
-// arrayNegocios.push(props.location.state.negociosRandom)
-    
-
-    // const URL = 'https://turisteapp-1.firebaseio.com/negocio.json';
-
-    // const [negocios, setNegocios] = useState([]);
-   
-    // let x=parseInt(Math.random()*10);
-   
-   
-
-    // const getNegocios = () => {
-    //     axios.get(URL)
-    //     .then((res) => {
-
-    //      setNegocios(res.data)
-    //     transformarDatos(res.data);
-        
-    //     }).then((res)=>console.log())
-    //     .catch((error) => alert(error))       
-   
-    // }
-    // const transformarDatos=(data)=> {
-    // let datosTransformados=Object.keys(data).map(id=>data[id])
-    // setNegociosRandom(datosTransformados[x])
-        
-        
-    // }  
-  
-  
-    
-    
-    // useEffect(() => {
-    
-       
-    //     getNegocios();
-    // }, []);
-
-   
-
-        
-        
-               
-              
-
+    const { negociosRandom, actividadesRandom } = props.location.state;
     return (
-        <div>
-            {actividadesRandom? 
-            actividadesRandom.map(actividad=>
-                 (<CardActivity
+        <React.Fragment>
+            <NavBar />
+            <main className="main h-100 ">
+                <section className="jumbotronRandom text-center">
+                    <hr className="featurette-divider" />
+                    <h1>Itinerario Random, diviértete</h1>
+                </section>
+                <div className=" mx-auto p-5">
+                    <div class="row row-cols-1 row-cols-md-3">
 
-                    nombre={actividad.nombre}
-                    localizacion={actividad.localizacion}
-                    horario={actividad.tipo}
-                    costo={actividad.horario}
-                    duracion={actividad.promedio}
-        
-                    />
+                        {actividadesRandom ?
+                            actividadesRandom.map(actividad =>
+                                (<CardActivity
 
-                
-            ) )
-            :<h1>No hay negocios en el lugar</h1>
-        
+                                    nombre={actividad.nombre}
+                                    localizacion={actividad.localizacion}
+                                    horario={actividad.tipo}
+                                    costo={actividad.horario}
+                                    duracion={actividad.promedio}
+                                />
+                                ))
+                            : <h1>No hay negocios en el lugar</h1>
 
-            }    
+                        }
+                        {negociosRandom ?
+                            negociosRandom.map(negocio =>
+                                (<Card
+                                    nombre={negocio.nombre}
+                                    localizacion={negocio.localizacion}
+                                    tipo={negocio.tipo}
+                                    horario={negocio.horario}
+                                    promedio={negocio.promedio}
 
-{negociosRandom? 
-            negociosRandom.map(negocio=>
-                 (<Card
+                                />
 
-                    nombre={negocio.nombre}
-                    localizacion={negocio.localizacion}
-                    tipo={negocio.tipo}
-                    horario={negocio.horario}
-                    promedio={negocio.promedio}
-        
-                    />
 
-                
-            ) )
-            :<h1>No hay negocios en el lugar</h1>
-        
+                                ))
+                            : <h1>No hay negocios en el lugar</h1>
 
-            }     
-           
-                    
-                
-              
-        </div>
+
+                        }
+                    </div>
+                </div>
+                <Footer />
+            </main>
+        </React.Fragment>
     )
-    
+
 }
 
 export default Random;

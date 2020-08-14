@@ -12,7 +12,7 @@ function Search(props) {
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="basic-addon1">¿En que lugar deseas comer?</span>
                 </div>
-                <input onChange={handlerEvent} type="text" className="form-control" placeholder="ej. cdmx / tepoztlan" aria-label="Username" aria-describedby="basic-addon1" />
+                <input onChange={handlerEvent} type="text" className="form-control" placeholder="ej. cdmx, tepoztlan" aria-label="Username" aria-describedby="basic-addon1" />
             </div> 
         </React.Fragment>
     )
