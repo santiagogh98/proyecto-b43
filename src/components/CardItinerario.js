@@ -5,11 +5,6 @@ const CardItinerario = (props) => {
 
     const { nombre, localizacion,  horario,costo,duracion,id} = props;
     
-
-
-    
-    
-
     return (
         <div className="card mb-4">
             <h5 className="card-header">{nombre}</h5>

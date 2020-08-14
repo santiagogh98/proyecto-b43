@@ -26,8 +26,8 @@
 }
 
 h1 {
-    font-size: 50px;
-    margin-left: 20px;
+    font-size: 70px;
+    margin-left: 5px;
 }
 
 .elegir {
@@ -66,12 +66,9 @@ h1 {
 
 
 footer {
-    background-color: #eeeeee;
+    background-color: #ffffff00;
     height: 50px;
     width: 100%;
-}
-p{
-    text-align: center;
 }
 /* GLOBAL STYLES
 -------------------------------------------------- */

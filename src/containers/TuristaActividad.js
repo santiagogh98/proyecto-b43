@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import CardActivity from '../components/CardActivity';
 import axios from 'axios';
 import SearchAc from '../components/SearchAc';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import'./TuristaActivity.css';
 
 
 
@@ -43,65 +46,34 @@ const TuristaActividad = () => {
         getActividades();
     }, []);
 
-   
-
-
-   
-
-        
-        
-               
-              
-
     return (
-        <div>
-            
-            <SearchAc buscarActividades={buscarActividades}/>
-            <main className="main">  
-            {actividadesFiltradas? 
+        <React.Fragment>            
+            <NavBar />
+            <main className="main h-100 ">
+            <section className="jumbotronActivity text-center">
+            <hr className="featurette-divider" />
+                    <h1>Busca un lugar para descubrirr</h1>
+                    <SearchAc buscarActividades={buscarActividades}/>
+            </section>
+                <div className=" mx-auto ">                
+               
+                {actividadesFiltradas? 
             actividadesFiltradas.map(actividad=>
-                 (<CardActivity 
-a
+                (<CardActivity
                     nombre={actividad.nombre}
                     localizacion={actividad.localizacion}
                     horario={actividad.horario}
                     costo={actividad.costo}
-                    duracion={actividad.duracion}
-                    
-        
+                    duracion={actividad.duracion}                
                     />
-                    
-
-                
-            ) )
-            :<h1>No hay negocios en el lugar</h1>
+                ))
+            :<h1>No hay negocios en el lugar</h1>      
+            } 
+            </div>  
+            <Footer />
+            </main>            
         
-
-            }    
-        
-
-                <div className="container pt-4">
-                    
-                     
-                        
-
-
-                    
-                
-            
-    
-
-
-                    
-
-                    
-                    
-
-                </div>
-            </main>
-        </div>
-    )
-    
-}
+        </React.Fragment>
+    )}
 
 export default TuristaActividad;
