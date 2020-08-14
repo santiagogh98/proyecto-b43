@@ -1,14 +1,40 @@
 import React from 'react'
-import {Link } from "react-router-dom";
+import './Turista.css'
+import { Link } from "react-router-dom";
 
 function Turista() {
     return (
-        <div className='d-flex flex-column '>
-            <Link to='/TuristaFood'><button>¿Donde comer?</button></Link>
-            <Link to='/TuristaFood'><button>¿Qué Hacer?</button></Link>
-            <Link to='/TuristaFood'><button>Itinerario</button></Link>
-            <Link to='/TuristaFood'><button>Itinerario Random</button></Link>
-            
+        <div className='main-container'>
+            <div className='sub-container'>
+                <h1>¿Qué quieres hacer hoy?</h1>
+                <div className="pruebas">
+                    <div className="prueba">
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d' }} to="/TuristaFood">
+                            <img className="specialMargin" src="https://img.icons8.com/officel/80/000000/meal.png"/>
+                            <p>¿Dónde comer?</p>
+                        </Link>
+                    </div>
+                    <div className="prueba">
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d'  }} to="/TuristaFood">
+                            <img src="https://img.icons8.com/officel/80/000000/waypoint-map.png"/>
+                            <p>¿Qué Hacer?</p>
+                        </Link>
+                    </div>
+                    <div className="prueba">
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d'  }} to="/TuristaFood">
+                            <img src="https://img.icons8.com/dusk/64/000000/tasklist.png"/>
+                            <p>Itinerario</p>
+                        </Link>
+                    </div>
+                    <div className="prueba">
+                        <Link style={{ textDecoration: 'none', color: '#fbd46d'  }} to="/TuristaFood">
+                            <img src="https://img.icons8.com/officel/80/000000/quest.png"/>
+                            <p className="dosPalabras">Itinerario Random</p>
+                        </Link>
+                    </div>
+                </div>
+
+            </div>
         </div>
     )
 }

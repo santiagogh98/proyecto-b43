@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.pruebas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 600px;
+}
+
+.prueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    margin: 30px 5px;
+}
+
+.specialMargin {
+    margin-left: 15px;
+}
+
+.dosPalabras {
+    width: 20px;
+    line-height: 1.3;
+}
