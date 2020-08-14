@@ -4,6 +4,7 @@ import {Link } from "react-router-dom";
 
 const CreateForm = (props) => {
     const {createNegocio} = props;
+    
 
     const [nombre, setNombre] = useState('');
     const [localizacion, setLocalizacion] = useState('');

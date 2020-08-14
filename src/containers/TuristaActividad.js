@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CardActivity from '../components/CardActivity';
 import axios from 'axios';
 import SearchAc from '../components/SearchAc';
-
+import Actividad from './Actividad';
+import PlantillaActividad from '../utils/PlantillaActividad'
 
 
 const TuristaActividad = () => {
@@ -27,6 +28,7 @@ const TuristaActividad = () => {
     }
     const transformarDatos=(data)=> {
         setActividades(Object.keys(data).map(id=>data[id]))
+        
         
     }
     const buscarActividades=(busqueda)=>{

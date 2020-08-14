@@ -6,6 +6,7 @@ const Card = (props) => {
     
 
     const { nombre, localizacion, tipo, horario,promedio,id} = props;
+    const{setNegociosFiltrados}=props;
     
 
     return (
@@ -18,7 +19,7 @@ const Card = (props) => {
                 <p className="card-text">Gasto por persona:${promedio}</p>
                
             </div>
-            <button>Agregar a itinerario</button>
+            <button onClick={setNegociosFiltrados}>Agregar a itinerario</button>
         </div>
     )
 }

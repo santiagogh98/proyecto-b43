@@ -27,6 +27,7 @@ const TuristaFood = () => {
     }
     const transformarDatos=(data)=> {
         setNegocios(Object.keys(data).map(id=>data[id]))
+        setNegociosFiltrados(Object.keys(data).map(id=>{return{...data[id],id:id}}))
         
     }
     const buscarNegocios=(busqueda)=>{
