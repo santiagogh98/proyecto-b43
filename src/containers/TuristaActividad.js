@@ -5,7 +5,8 @@ import SearchAc from '../components/SearchAc';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import'./TuristaActivity.css';
-
+import Actividad from './Actividad';
+import PlantillaActividad from '../utils/PlantillaActividad'
 
 
 const TuristaActividad = () => {
@@ -30,6 +31,7 @@ const TuristaActividad = () => {
     }
     const transformarDatos=(data)=> {
         setActividades(Object.keys(data).map(id=>data[id]))
+        
         
     }
     const buscarActividades=(busqueda)=>{

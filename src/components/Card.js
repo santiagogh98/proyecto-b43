@@ -1,6 +1,7 @@
 import React from 'react';
 const Card = (props) => {
     const { nombre, localizacion, tipo, horario, promedio, id } = props;
+    const{setNegociosFiltrados}=props;
     return (
         <React.Fragment>
             <div class="col mb-4">
@@ -12,7 +13,7 @@ const Card = (props) => {
                         <p class="card-text">Tipo:{tipo}</p>
                         <p class="card-text">Horario:{horario}</p>
                         <p class="card-text">Gasto por persona:${promedio}</p>
-                        <a href="#" class="btn btn-primary">Agregar a itinerarios</a>      </div>
+                        <a onClick={setNegociosFiltrados} class="btn btn-primary">Agregar a itinerarios</a>      </div>
                 </div>
             </div>
         </React.Fragment>

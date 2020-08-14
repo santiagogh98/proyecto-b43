@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
+import './CreateForm.css';
 import {Link } from "react-router-dom";
 
 
 const CreateForm = (props) => {
     const {createNegocio} = props;
+    
 
     const [nombre, setNombre] = useState('');
     const [localizacion, setLocalizacion] = useState('');
@@ -28,40 +30,42 @@ const CreateForm = (props) => {
         setPromedio(evento.target.value);
     }
     return (
-        <div className="card">
-            <div className="card-body">
-                <div className="form-group">
-                    <label htmlFor="title">Nombre</label>
+        <div className="main-container">
+            <div className="sub-container">
+                <div className="input-container">
+                    <label htmlFor="title">NOMBRE</label>
                     <input onChange={handlerNombre} type="text" className="form-control" id="nombre" />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="category">Localizacion</label>
+                <div className="input-container">
+                    <label htmlFor="category">UBICACIÓN</label>
                     <input onChange={handlerLocalizacion} type="text" className="form-control" id="localizacion" />
                 </div>
-                <div className="card-body">
-                <div className="form-group">
-                    <label htmlFor="title">Tipo</label>
+                <div className="">
+                <div className="input-container">
+                    <label htmlFor="title">CATEGORÍA</label>
                     <input onChange={handlerTipo} type="text" className="form-control" id="tipo" />
                 </div>
              </div>
-             <div className="card-body">
-                <div className="form-group">
-                    <label htmlFor="title">Horario</label>
+             <div className="">
+                <div className="input-container">
+                    <label htmlFor="title">HORARIO</label>
                     <input onChange={handlerHorario} type="text" className="form-control" id="horario" />
                 </div>
              </div>
-             <div className="card-body">
-                <div className="form-group">
-                    <label htmlFor="title">Promedio</label>
+             <div className="">
+                <div className="input-container">
+                    <label htmlFor="title">PRECIO PROMEDIO</label>
                     <input onChange={handlerPromedio} type="text" className="form-control" id="promedio" />
                 </div>
              </div>
 
 
 
-
-            <Link to='/'> <button onClick={ () => {createNegocio(nombre,localizacion,tipo,horario,promedio )}} className="btn btn-primary">Agregar</button></Link>    
-            </div>
+            <div className="extra-margin">
+                <Link to='/'> <button onClick={ () => {createNegocio(nombre,localizacion,tipo,horario,promedio )}} className="btn btn-primary">Agregar</button></Link>
+            </div>   
+        
+        </div>
             
             
             

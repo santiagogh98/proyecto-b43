@@ -2,6 +2,7 @@ import React from 'react';
 const CardActivity = (props) => {
 
     const { nombre, localizacion,  horario,costo,duracion,id} = props;
+    const{setNegociosFiltrados}=props;
     return (
         <React.Fragment>
             <div class="col mb-4">
@@ -13,7 +14,7 @@ const CardActivity = (props) => {
                         <p class="card-text">Horario: {horario}</p>
                         <p class="card-text">Costo: ${costo}</p>
                         <p className="card-text">Duración:{duracion}</p> 
-                        <a href="#" class="btn btn-primary">Agregar a itinerarios</a>      </div>
+                        <a onClick={setNegociosFiltrados} class="btn btn-primary">Agregar a itinerarios</a>      </div>
                 </div>
             </div>
         </React.Fragment>
