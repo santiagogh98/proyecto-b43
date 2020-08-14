@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar';
 import './Landing.css';
+import Footer from '../components/Footer';
 
 function Turista() {
     return (
@@ -9,7 +10,7 @@ function Turista() {
             <NavBar />
             <section className="jumbotron w-100 h-20">
                 <div className="container">
-                    <h1>Crea, conoce, explora.</h1>                    
+                    <h1>Turistea, conoce, explora.</h1>                    
                 </div>
             </section>            
             <main role="main">
@@ -40,28 +41,12 @@ function Turista() {
                             <p>Con la opción de itinerario random déjate llevar por nuestras opciones y descubre lo mejor que tenemos para ti.</p>
                             <p><Link className="btn btn-secondary" to="/turista" role="button">Ver Detalles &raquo;</Link></p>
                         </div>
-
                     </div>
                 </div>
                 <hr class="featurette-divider" />
-
-                <footer class="container">
-                    <p class="float-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2020 Turisteapp, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>&middot;  <Link to="/negocio">Negocio</Link></p>
-                </footer>
-
-
+                <Footer />
             </main>
         </React.Fragment>
-
-
-        // <div className='d-flex flex-column '>
-        //     <Link to='/TuristaFood'><button>¿Donde comer?</button></Link>
-        //     <Link to='/TuristaFood'><button>¿Qué Hacer?</button></Link>
-        //     <Link to='/TuristaFood'><button>Itinerario</button></Link>
-        //     <Link to='/TuristaFood'><button>Itinerario Random</button></Link>
-
-        // </div>
     )
 }
 

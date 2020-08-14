@@ -5,6 +5,7 @@ import Search from '../components/Search';
 import Negocio from './Negocio';
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 
 const TuristaFood = () => {
@@ -55,31 +56,22 @@ const TuristaFood = () => {
                     {negociosFiltrados ?
                         negociosFiltrados.map(negocio =>
                             (<Card
-
                                 nombre={negocio.nombre}
                                 localizacion={negocio.localizacion}
                                 tipo={negocio.tipo}
                                 horario={negocio.tipo}
                                 promedio={negocio.promedio}
-
                             />
-
-
                             ))
                         : <h1>No hay negocios en el lugar</h1>
-
-
                     }
-
-
                     <div className="container pt-4">
-
                     </div>
+                    
                 </main>
             </div>
+            <Footer />
         </React.Fragment>
-    )
-
-}
+    )}
 
 export default TuristaFood;

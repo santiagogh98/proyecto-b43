@@ -2,6 +2,7 @@ import React from 'react';
 import './Landing.css';
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 
 
@@ -94,14 +95,10 @@ function Landing() {
                         <img src='https://www.optimomexico.mx/wp-content/uploads/2018/12/500x500-8.jpg' className="bd-placeholder-img " width="450" height="450" alt="Mujer Saltando"/>
                         </div>
                     </div>
-
                     <hr className="featurette-divider" />
-
-                </div>  
-                <footer className="container">
-                    <p className="float-right"><a href="/">Volver arriba</a></p>
-                    <p>&copy; 2020 Turisteapp, Inc. &middot; <a href="/">Privacidad</a> &middot; <a href="/">Terminos</a> &middot;  <Link to="/negocio">Negocio</Link></p>
-                </footer>
+                </div>
+                <Footer />  
+                
             </main>
         </React.Fragment >
     
