@@ -1,0 +1,16 @@
+.jumbotronActivity{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    height: 30rem;
+    text-align: center;
+    background-image: url('https://a-static.besthdwallpaper.com/paseo-rapido-perro-papel-pintado-5472x1824-13810_108.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+  }
+  h1 {
+    font-size: 90px;
+  }

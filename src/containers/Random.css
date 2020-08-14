@@ -1,0 +1,17 @@
+
+  .jumbotronRandom {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    height: 30rem;
+    text-align: center;
+    background-image: url('https://www.smartertravel.com/uploads/2018/04/Secret-Mexican-Villages-hero-1400x500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+  }
+  .h1 {
+    font-size: 180px;
+  }

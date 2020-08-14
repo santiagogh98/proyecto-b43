@@ -2,6 +2,7 @@ import React from 'react'
 import CreateForm from '../components/CreateForm'
 import axios from 'axios';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 const Negocio = () => {
 
@@ -23,6 +24,7 @@ const Negocio = () => {
                     <CreateForm createNegocio={createNegocio}/>
                 </div>
             </main>
+            <Footer />
         </React.Fragment>
     )
 }
